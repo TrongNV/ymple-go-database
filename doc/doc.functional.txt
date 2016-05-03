@@ -1,0 +1,31 @@
+Campo Contenuto
+
+Nome OBBLIGATORIO. Modello/Titolo. No Slogan o frasi promozionali.
+
+Marca FACOLTATIVO. Marca del produttore, suggeriamo di indicarla 
+
+Descrizione FACOLTATIVO. Descrizione breve dell'offerta. Deve indicare le 
+
+Descrizione Lunga FACOLTATIVO. Descrizione lunga dell'offerta. Deve indicare quante 
+
+Prezzo Originale FACOLTATIVO. Prezzo originale dell'offerta: numerico, comprensivo 
+
+Prezzo Vendita OBBLIGATORIO. Prezzo di vendita: numerico, comprensivo di Iva e 
+
+Codice Interno (SKU) OBBLIGATORIO. UNICO PER CIASCUN OFFERTA; solitamente è 
+
+Link all'offerta OBBLIGATORIO. Link alla pagina dell'offerta sul sito 
+
+Disponibilità FACOLTATIVO. Possibili Valori: numerico oppure disponibile, non 
+
+Albero Categorie OBBLIGATORIO. Categorie del sito dell'inserzionista. E' preferibile 
+
+Link all'Immagine FACOLTATIVO. Link all'immagine dell'offerta (no link a immagine 
+
+Spese di Spedizione OBBLIGATORIO. Numerico, comprensivo di Iva, senza separatore 
+
+Codice Produttore FACOLTATIVO. Chiamato anche Part-Number. E' il codice univoco 
+
+Codice EAN FACOLTATIVO. Codice EAN del prodotto, univoco e definito a 
+
+Ulteriori Link Immagine

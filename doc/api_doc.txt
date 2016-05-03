@@ -1,0 +1,32 @@
+
+
+
+
+#to manage the mai list
+
+[START]: api to add mai
+
+
+POST /mai/add/{service}
+
+input: token,
+
+GET /mai/list/{service}
+
+[END]
+
+
+
+
+# to manage the product
+[START]
+
+POST /product/add/{category}
+
+
+GET /product?
+
+parameter name,
+
+
+[END]
