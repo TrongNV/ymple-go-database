@@ -5,14 +5,9 @@ import (
 	"gopkg.in/redis.v3"
 )
 
-
-
 func Read(db string) {
-
 	fmt.Println(db)
-
 	ExampleNewClient()
-
 	ExampleClient()
 
 }
@@ -21,7 +16,7 @@ func ExampleNewClient() {
 	client := redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "", // no password set
-		DB:       0,  // use default DB
+		DB:       0, // use default DB
 	})
 
 	pong, err := client.Ping().Result()
@@ -29,13 +24,12 @@ func ExampleNewClient() {
 	// Output: PONG <nil>
 }
 
-
 func ExampleClient() {
 
 	client := redis.NewClient(&redis.Options{
 		Addr:     "localhost:6379",
 		Password: "", // no password set
-		DB:       0,  // use default DB
+		DB:       0, // use default DB
 	})
 
 	err := client.Set("key", "value", 0).Err()

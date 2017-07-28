@@ -38,8 +38,8 @@ type TypesType struct {
 }
 
 type Configuration struct {
-	Users    []string
-	Groups   []string
+	Users  []string
+	Groups []string
 }
 
 func Test() {
@@ -57,13 +57,10 @@ func ReadJson() {
 
 	fmt.Printf("%s\n", string(file))
 
-	//m := new(Dispatch)
-	//var m interface{}
 	var jsontype jsonobject
 	json.Unmarshal(file, &jsontype)
 
 	fmt.Printf("START print object");
-
 
 	fmt.Printf("Results: %v\n", jsontype)
 
@@ -85,10 +82,7 @@ func ReadJson2() {
 		fmt.Println("error:", err)
 	}
 
-
-
 	fmt.Printf("Start conf user");
-
 
 	fmt.Println(configuration.Users)
 

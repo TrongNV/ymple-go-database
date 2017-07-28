@@ -7,20 +7,16 @@ import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"*/
 
-//"net/http"
+	//"net/http"
 	"./package1"
 	"./package_redis"
 	"./package_gin"
 	"./package_mongodb"
 	"./package_elast"
-//   "./package_mysql"
+	//   "./package_mysql"
 )
 
-
-
 func main() {
-
-
 
 	package_mongodb.InsertMongo()
 
@@ -34,8 +30,5 @@ func main() {
 
 	package_gin.StartRouter()
 	// package_mysql.Read()
-
-
-
 }
 

@@ -21,71 +21,47 @@ func Read() {
 		// Handle error
 	}
 
-
-
-	// Create an index FTH
-
-
 	const s = "notest"
 
-	if s == "test"{
-	_, err = client.CreateIndex("twitter2").Do()
-	if err != nil {
-	// Handle error
-	panic(err)
+	if s == "test" {
+		_, err = client.CreateIndex("twitter2").Do()
+		if err != nil {
+			// Handle error
+			panic(err)
+		}
 	}
-	}
-
-
-
 
 	// Add a document to the index [START]
 	tweet := Tweet{User: "olivere", Message: "Take Five 2"}
 
 	_, err = client.Index().
-	Index("twitter2").
-	Type("tweet").
-	Id("1").
-	BodyJson(tweet).
-	Do()
+		Index("twitter2").
+		Type("tweet").
+		Id("1").
+		BodyJson(tweet).
+		Do()
 	if err != nil {
 		// Handle error
 		panic(err)
 	}
 
 
-	// add a document [END]
-
-
-
-
-
-	//os.Exit()
-
-	// Search with a term query
-
-
-	//termQuery := elastic.NewTermQuery("User", "olivere")
 
 
 	//termQuery := elastic.NewMatchQuery("User", "olive")
 
 	termQuery := elastic.NewRegexpQuery("User", "olive.*")
 
-
-	
-
-
 	searchResult, err := client.Search().
-	Index("twitter2").// search in index "twitter"
-	Query(termQuery).// specify the query
-	Sort("User", true).// sort by "user" field, ascending
-	From(0).Size(10).// take documents 0-9
-	Pretty(true).// pretty print request and response JSON
-	Do()                // execute
+		Index("twitter2").// search in index "twitter"
+		Query(termQuery).// specify the query
+		Sort("User", true).// sort by "user" field, ascending
+		From(0).Size(10).// take documents 0-9
+		Pretty(true).// pretty print request and response JSON
+		Do()                // execute
 	if err != nil {
 		// Handle error
-			panic(err)
+		panic(err)
 	}
 
 	// searchResult is of type SearchResult and returns hits, suggestions,
